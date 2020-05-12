@@ -5,14 +5,14 @@
       "user": {
         "title": "Connect to the device",
         "data": {
-          "host": "Host",
+          "host": "[%key:common::config_flow::data::host%]",
           "email": "Email (Optional)",
-          "port": "Port (10000)"
+          "port": "[%key:common::config_flow::data::port%]"
         }
       }
     },
     "error": {
-      "connection_error": "Failed to connect, please try again"
+      "connection_error": "[%key:common::config_flow::error::cannot_connect%]"
     },
     "abort": {
       "already_configured": "Only one Atag device can be added to Home Assistant"
